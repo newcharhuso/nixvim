@@ -38,6 +38,7 @@
           pkgs.dotnet-sdk
           pkgs.dotnet-aspnetcore
           pkgs.nodePackages_latest.nodejs
+					pkgs.vimPlugins.roslyn-nvim
         ];
       };
     };

@@ -17,7 +17,6 @@
     ./yanky.nix
     ./autopairs.nix
 		./blink-cmp.nix
-		./roslyn.nix
   ];
 
   config = {
