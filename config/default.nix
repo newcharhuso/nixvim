@@ -14,6 +14,7 @@
     ./whichkey.nix
     ./hlchunk.nix
     ./yanky.nix
+    ./autopairs.nix
   ];
 
   config = {
