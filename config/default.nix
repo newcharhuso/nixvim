@@ -6,6 +6,7 @@
     ./toggleterm.nix
     ./themes.nix
     ./lazygit.nix
+    ./lualine.nix
   ];
 
   config = {
