@@ -9,6 +9,7 @@
     ./lualine.nix
     ./dashboard.nix
     ./neotree.nix
+    ./bufferline.nix
   ];
 
   config = {
