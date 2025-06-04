@@ -16,6 +16,7 @@
     ./yanky.nix
     ./autopairs.nix
 		./blink-cmp.nix
+		./roslyn.nix
   ];
 
   config = {
@@ -43,6 +44,7 @@
     };
     extraPackages = with pkgs; [
       # base
+      nerd-fonts.jetbrains-mono # Font
       fzf
       ripgrep
       fd
