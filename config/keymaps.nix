@@ -73,6 +73,11 @@
       mode = ["n"];
       action = "<cmd>lua Snacks.picker.command_history()<CR>";
     }
+    {
+      key = "<leader>p";
+      mode = ["n"];
+      action = "<cmd>YankyRingHistory<CR>";
+    }
   ];
 }
 

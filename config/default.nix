@@ -15,6 +15,7 @@
     ./hlchunk.nix
     ./yanky.nix
     ./autopairs.nix
+		./blink-cmp.nix
   ];
 
   config = {
