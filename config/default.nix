@@ -8,7 +8,6 @@
     ./lazygit.nix
     ./lualine.nix
     ./dashboard.nix
-    ./neotree.nix
     ./bufferline.nix
     ./snacks.nix
   ];

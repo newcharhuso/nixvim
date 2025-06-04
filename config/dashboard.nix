@@ -1,12 +1,10 @@
 {
   plugins.startup = {
     enable = true;
-
     colors = {
       background = "#ffffff";
       foldedSection = "#ffffff";
     };
-
     sections = {
       header = {
         type = "text";
@@ -16,18 +14,18 @@
         title = "Header";
         margin = 5;
         content = [
-          " ██████╗░███████╗░█████╗░░█████╗░██████╗░████████╗░░░████████╗███████╗░█████╗░██╗░░██╗"
-          " ██╔══██╗██╔════╝██╔══██╗██╔══██╗██╔══██╗╚══██╔══╝░░░╚══██╔══╝██╔════╝██╔══██╗██║░░██║"
-          " ██║░░██║█████╗░░██║░░╚═╝██║░░██║██████╔╝░░░██║░░░░░░░░░██║░░░█████╗░░██║░░╚═╝███████║"
-          " ██║░░██║██╔══╝░░██║░░██╗██║░░██║██╔══██╗░░░██║░░░░░░░░░██║░░░██╔══╝░░██║░░██╗██╔══██║"
-          " ██████╔╝███████╗╚█████╔╝╚█████╔╝██║░░██║░░░██║░░░██╗░░░██║░░░███████╗╚█████╔╝██║░░██║"
-          " ╚═════╝░╚══════╝░╚════╝░░╚════╝░╚═╝░░╚═╝░░░╚═╝░░░╚═╝░░░╚═╝░░░╚══════╝░╚════╝░╚═╝░░╚═╝"
+          "██╗  ██╗██╗  ██╗██╗   ██╗██╗   ██╗███████╗"
+          "╚██╗██╔╝██║  ██║██║   ██║╚██╗ ██╔╝╚══███╔╝"
+          " ╚███╔╝ ███████║██║   ██║ ╚████╔╝   ███╔╝ "
+          " ██╔██╗ ██╔══██║██║   ██║  ╚██╔╝   ███╔╝  "
+          "██╔╝ ██╗██║  ██║╚██████╔╝   ██║   ███████╗"
+          "╚═╝  ╚═╝╚═╝  ╚═╝ ╚═════╝    ╚═╝   ╚══════╝"
         ];
         highlight = "Statement";
         defaultColor = "";
         oldfilesAmount = 0;
       };
-
+      
       body = {
         type = "mapping";
         oldfilesDirectory = false;
@@ -37,34 +35,14 @@
         margin = 5;
         content = [
           [
-            " Find File"
-            "Telescope find_files"
-            "ff"
+            " Find Files"
+            "lua Snacks.picker.files()"
+            "f"
           ]
           [
-            "󰍉 Find Word"
-            "Telescope live_grep"
-            "fr"
-          ]
-          [
-            " Recent Files"
-            "Telescope oldfiles"
-            "fg"
-          ]
-          [
-            " File Browser"
-            "Telescope file_browser"
-            "fe"
-          ]
-          [
-            " Copilot Chat"
-            "CopilotChat"
-            "ct"
-          ]
-          [
-            "󰧑 SecondBrain"
-            "edit ~/projects/personal/SecondBrain"
-            "sb"
+            "Git Browse"
+            "Snacks.gitbrowse()"
+            "b"
           ]
         ];
         highlight = "string";
@@ -72,14 +50,14 @@
         oldfilesAmount = 0;
       };
     };
-
+    
     options = {
       paddings = [
         1
         3
       ];
     };
-
+    
     parts = [
       "header"
       "body"
