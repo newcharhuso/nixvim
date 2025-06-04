@@ -11,8 +11,8 @@
         custom_highlights = ''
           function(highlights)
             return {
-            CursorLineNr = { fg = highlights.peach, style = {} },
-            NavicText = { fg = highlights.text },
+              CursorLineNr = { fg = highlights.peach, style = {} },
+              NavicText = { fg = highlights.text },
             }
           end
         '';

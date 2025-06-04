@@ -11,9 +11,9 @@
     ./bufferline.nix
     ./snacks.nix
     ./gitsigns.nix
-    ./mini.nix
     ./whichkey.nix
-    ./hlchunk.lua
+    ./hlchunk.nix
+    ./yanky.nix
   ];
 
   config = {
