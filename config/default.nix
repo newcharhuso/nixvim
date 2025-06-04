@@ -10,6 +10,9 @@
     ./dashboard.nix
     ./bufferline.nix
     ./snacks.nix
+		./gitsigns.nix
+		./mini.nix
+		./whichkey.nix
   ];
 
   config = {
