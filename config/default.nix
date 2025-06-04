@@ -7,6 +7,8 @@
     ./themes.nix
     ./lazygit.nix
     ./lualine.nix
+    ./dashboard.nix
+    ./neotree.nix
   ];
 
   config = {
