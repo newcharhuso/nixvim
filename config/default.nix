@@ -10,9 +10,10 @@
     ./dashboard.nix
     ./bufferline.nix
     ./snacks.nix
-		./gitsigns.nix
-		./mini.nix
-		./whichkey.nix
+    ./gitsigns.nix
+    ./mini.nix
+    ./whichkey.nix
+    ./hlchunk.lua
   ];
 
   config = {
