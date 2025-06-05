@@ -16,11 +16,12 @@
     ./yanky.nix
     ./autopairs.nix
     ./blink-cmp.nix
-		./tmux-navigator.nix
-		./smear-cursor.nix
-		./lsp/conform.nix
-		./lsp/fidget.nix
-		./lsp/lsp.nix
+    ./tmux-navigator.nix
+    ./smear-cursor.nix
+    ./lsp/conform.nix
+    ./lsp/fidget.nix
+    ./lsp/lsp.nix
+    ./cmp/cmp.nix
   ];
 
   config = {

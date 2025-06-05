@@ -16,7 +16,6 @@
       options = {
         silent = true;
         noremap = true;
-				huydeptrai
       };
     }
     {

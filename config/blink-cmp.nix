@@ -6,31 +6,31 @@
     settings = {
       appearance = {
         kind_icons = {
-        Class = "󱡠";
-        Color = "󰏘";
-        Constant = "󰏿";
-        Constructor = "󰒓";
-        Enum = "󰦨";
-        EnumMember = "󰦨";
-        Event = "󱐋";
-        Field = "󰜢";
-        File = "󰈔";
-        Folder = "󰉋";
-        Function = "󰊕";
-        Interface = "󱡠";
-        Keyword = "󰻾";
-        Method = "󰊕";
-        Module = "󰅩";
-        Operator = "󰪚";
-        Property = "󰖷";
-        Reference = "󰬲";
-        Snippet = "󱄽";
-        Struct = "󱡠";
-        Text = "󰉿";
-        TypeParameter = "󰬛";
-        Unit = "󰪚";
-        Value = "󰦨";
-        Variable = "󰆦";
+          Class = "󱡠";
+          Color = "󰏘";
+          Constant = "󰏿";
+          Constructor = "󰒓";
+          Enum = "󰦨";
+          EnumMember = "󰦨";
+          Event = "󱐋";
+          Field = "󰜢";
+          File = "󰈔";
+          Folder = "󰉋";
+          Function = "󰊕";
+          Interface = "󱡠";
+          Keyword = "󰻾";
+          Method = "󰊕";
+          Module = "󰅩";
+          Operator = "󰪚";
+          Property = "󰖷";
+          Reference = "󰬲";
+          Snippet = "󱄽";
+          Struct = "󱡠";
+          Text = "󰉿";
+          TypeParameter = "󰬛";
+          Unit = "󰪚";
+          Value = "󰦨";
+          Variable = "󰆦";
         };
         nerd_font_variant = "normal";
         use_nvim_cmp_as_default = false;
@@ -73,7 +73,7 @@
           "show_documentation"
           "hide_documentation"
         ];
-        "<Enter>" = [
+        "<C-y>" = [
           "select_and_accept"
         ];
         "<Down>" = [
