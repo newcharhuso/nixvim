@@ -14,7 +14,7 @@
       enable = true;
       inlayHints = true;
       servers = {
-        csharp_ls = {
+        omnisharp = {
           enable = true;
         };
         html = {

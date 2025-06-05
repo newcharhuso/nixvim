@@ -21,7 +21,6 @@
     ./lsp/conform.nix
     ./lsp/fidget.nix
     ./lsp/lsp.nix
-    ./cmp/cmp.nix
   ];
 
   config = {
