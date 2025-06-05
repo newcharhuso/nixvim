@@ -60,12 +60,12 @@
           "scroll_documentation_down"
           "fallback"
         ];
-        "<Tab>" = [
-          "select_next"
-          "fallback"
-        ];
         "<S-Tab>" = [
           "select_prev"
+          "fallback"
+        ];
+        "<Tab>" = [
+          "select_next"
           "fallback"
         ];
         "<C-space>" = [
@@ -73,7 +73,7 @@
           "show_documentation"
           "hide_documentation"
         ];
-        "<C-y>" = [
+        "<Enter>" = [
           "select_and_accept"
         ];
         "<Down>" = [
