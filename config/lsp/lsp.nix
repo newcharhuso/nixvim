@@ -14,6 +14,9 @@
       enable = true;
       inlayHints = true;
       servers = {
+        omnisharp = {
+          enable = true;
+        };
         html = {
           enable = true;
         };
@@ -141,50 +144,51 @@
     roslyn-ls
   ];
 
- extraConfigLua = ''
-  local _border = "rounded"
-  vim.lsp.config("roslyn", {
-    cmd = {
-      "dotnet",
-      "<target>/Microsoft.CodeAnalysis.LanguageServer.dll",
-      "--logLevel=Information",
-      "--extensionLogDirectory=" .. vim.fs.dirname(vim.lsp.get_log_path()),
-      "--stdio",
-    },
-    on_attach = function()
-      print("This will run when the server attaches!")
-    end,
-    settings = {
-      csharp = {
-        inlay_hints = {
-          csharp_enable_inlay_hints_for_implicit_object_creation = true,
-          csharp_enable_inlay_hints_for_implicit_variable_types = true,
-        },
-        code_lens = {
-          dotnet_enable_references_code_lens = true,
-        },
+  extraConfigLua = ''
+    local _border = "rounded"
+
+    vim.lsp.config("roslyn", {
+      cmd = {
+        "dotnet",
+        "<target>/Microsoft.CodeAnalysis.LanguageServer.dll",
+        "--logLevel=Information",
+        "--extensionLogDirectory=" .. vim.fs.dirname(vim.lsp.get_log_path()),
+        "--stdio"
       },
-    },
-  })
-  vim.lsp.handlers["textDocument/hover"] = vim.lsp.with(
-    vim.lsp.handlers.hover, {
+      on_attach = function()
+        print("This will run when the server attaches!")
+      end,
+      settings = {
+        csharp = {
+          inlay_hints = {
+            csharp_enable_inlay_hints_for_implicit_object_creation = true,
+            csharp_enable_inlay_hints_for_implicit_variable_types = true
+          },
+          code_lens = {
+            dotnet_enable_references_code_lens = true
+          }
+        }
+      }
+    })
+
+    vim.lsp.handlers["textDocument/hover"] = vim.lsp.with(
+      vim.lsp.handlers.hover, {
+        border = _border
+      }
+    )
+
+    vim.lsp.handlers["textDocument/signatureHelp"] = vim.lsp.with(
+      vim.lsp.handlers.signature_help, {
+        border = _border
+      }
+    )
+
+    vim.diagnostic.config{
+      float = { border = _border }
+    }
+
+    require('lspconfig.ui.windows').default_options = {
       border = _border
     }
-  )
-
-  vim.lsp.handlers["textDocument/signatureHelp"] = vim.lsp.with(
-    vim.lsp.handlers.signature_help, {
-      border = _border
-    }
-  )
-
-  vim.diagnostic.config{
-    float={border=_border}
-  }
-
-  require('lspconfig.ui.windows').default_options = {
-    border = _border
-  }
-'';
-
+  '';
 }
