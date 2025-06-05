@@ -139,6 +139,7 @@
   };
   extraPlugins = with pkgs.vimPlugins; [
     ansible-vim
+    roslyn-nvim
   ];
 
   extraConfigLua = ''
