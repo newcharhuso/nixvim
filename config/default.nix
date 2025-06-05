@@ -17,6 +17,7 @@
     ./autopairs.nix
     ./blink-cmp.nix
 		./tmux-navigator.nix
+		./smear-cursor.nix
   ];
 
   config = {
