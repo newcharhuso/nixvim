@@ -22,6 +22,7 @@
     ./lsp/fidget.nix
     ./lsp/lsp.nix
     ./nix-develop.nix
+    ./kulala.nix
   ];
 
   config = {
