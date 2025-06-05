@@ -1,8 +1,7 @@
 { pkgs, lib, ... }:
 {
   imports = [
-    ./extra.nix
-		./keymaps.nix
+    ./keymaps.nix
     ./treesitter.nix
     ./toggleterm.nix
     ./themes.nix
@@ -16,7 +15,8 @@
     ./hlchunk.nix
     ./yanky.nix
     ./autopairs.nix
-		./blink-cmp.nix
+    ./blink-cmp.nix
+		./tmux-navigator.nix
   ];
 
   config = {
