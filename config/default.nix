@@ -27,7 +27,6 @@
     ./autosave.nix
     ./notify.nix
     ./barbecue.nix
-    ./dbee.nix
   ];
 
   config = {
