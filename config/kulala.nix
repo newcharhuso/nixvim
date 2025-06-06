@@ -4,6 +4,7 @@
     grpcurl
     openssl
     websocat
+    jq
   ];
 
   plugins.kulala = {

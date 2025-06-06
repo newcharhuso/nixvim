@@ -23,6 +23,7 @@
     ./lsp/lsp.nix
     ./nix-develop.nix
     ./kulala.nix
+    ./aerial.nix
   ];
 
   config = {
