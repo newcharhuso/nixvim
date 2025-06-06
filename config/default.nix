@@ -24,6 +24,7 @@
     ./nix-develop.nix
     ./kulala.nix
     ./aerial.nix
+    ./autosave.nix
   ];
 
   config = {

@@ -93,6 +93,11 @@
       action = "<cmd>NixDevelop<CR>";
     }
     {
+      key = "<leader>o";
+      mode = [ "n" ];
+      action = "<cmd>AerialToggle<CR>";
+    }
+    {
       key = "<leader>Rs";
       mode = [
         "n"
