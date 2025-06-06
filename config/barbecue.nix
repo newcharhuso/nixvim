@@ -1,7 +1,6 @@
 {
-  plugins.auto-save = {
+  plugins.barbecue = {
     enable = true;
     autoLoad = true;
-    #testsave
   };
 }

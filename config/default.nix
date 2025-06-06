@@ -25,6 +25,8 @@
     ./kulala.nix
     ./aerial.nix
     ./autosave.nix
+    ./notify.nix
+    ./barbecue.nix
   ];
 
   config = {

@@ -98,6 +98,11 @@
       action = "<cmd>AerialToggle<CR>";
     }
     {
+      key = "<C-s>";
+      mode = [ "n" ];
+      action = "<cmd>ASToggle<CR>";
+    }
+    {
       key = "<leader>Rs";
       mode = [
         "n"
