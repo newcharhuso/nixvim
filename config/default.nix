@@ -27,6 +27,7 @@
     ./autosave.nix
     ./notify.nix
     ./barbecue.nix
+    ./noice.nix
   ];
 
   config = {

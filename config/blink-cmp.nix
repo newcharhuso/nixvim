@@ -67,6 +67,9 @@
         };
         signature = {
           enabled = true;
+          window = {
+            border = "rounded";
+          };
         };
 
         sources = {
