@@ -28,6 +28,7 @@
     ./notify.nix
     ./barbecue.nix
     ./noice.nix
+    ./neoscroll.nix
   ];
 
   config = {
