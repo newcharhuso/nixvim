@@ -29,6 +29,7 @@
     ./barbecue.nix
     ./noice.nix
     ./neoscroll.nix
+    ./markview.nix
   ];
 
   config = {
