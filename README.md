@@ -38,22 +38,33 @@ Here is a list of the main plugins included in this configuration along with the
 
 ### 📁 **Plugins Overview**
 
-| Plugin Name                                                          | Purpose                           | Keymap(s)                    |
-| -------------------------------------------------------------------- | --------------------------------- | ---------------------------- |
-| [`telescope.nvim`](https://github.com/nvim-telescope/telescope.nvim) | File/symbol search                | `<leader>ff`, `<leader>fg`   |
-| `nvim-tree.lua`                                                      | File explorer                     | `<leader>e`                  |
-| `lualine.nvim`                                                       | Status line                       | -                            |
-| `bufferline.nvim`                                                    | Tab/buffer management             | `<Tab>`, `<S-Tab>`           |
-| `nvim-cmp`                                                           | Auto-completion engine            | -                            |
-| `LuaSnip`                                                            | Snippet support                   | -                            |
-| `gitsigns.nvim`                                                      | Git signs in gutter               | -                            |
-| `toggleterm.nvim`                                                    | Toggleable terminal inside Neovim | `<leader>tt`                 |
-| `nvim-lspconfig`                                                     | Built-in LSP support              | `gd`, `K`, `<leader>rn` etc. |
-| `null-ls.nvim`                                                       | Code formatting and linting       | `<leader>f`                  |
-| `which-key.nvim`                                                     | Keybinding helper popup           | -                            |
-| `lazy.nvim`                                                          | Plugin manager (used by LazyVim)  | -                            |
+| Plugin Name                                                            | Purpose             | Keymap(s)-check `config/keymaps.nix` for details |
+| -----------------------------------------------------------------------|-------------------- | ------------------------------------------------ |
+| [`snacks.picker`](https://github.com/folke/snacks.nvim)                | File/symbol search  | `<leader>ff`, `<leader>fg`                       |
+| [`snacks.explorer`](https://github.com/folke/snacks.nvim)              | File explorer       | `<leader>e`                                      |
+| [`blink-cmp`](https://github.com/Saghen/blink.cmp)                     | Code completion     | `<Tab>`, `Enter`                                 |
+| [`tmux-navigator`](https://github.com/christoomey/vim-tmux-navigator)  | Tab navigation      | `<C-h>`,`<C-j>`,`<C-k>`,`<C-l>`                  |
+| [`dashboard.nvim`](https://github.com/nvimdev/dashboard-nvim)          | Dashboard           | `config/dashboard.nix`                           |
+| [`autosave.nvim`](https://github.com/pocco81/auto-save.nvim)           | Save edit           | `<C-s>`                                          |
+| [`bufferline.nvim`](https://github.com/akinsho/bufferline.nvim)        | Display buffer      | Same keymap as LazyVim                           |
+| [`lualine.nvim`](https://github.com/nvim-lualine/lualine.nvim)         | Display lualine     | `config/lualine.nix`                             |
+| [`treesitter.nvim`](https://github.com/nvim-treesitter/nvim-treesitter)| Syntax highlight    | `config/treesitter.nix`                          |
+| [`web-devicon.nvim`](https://github.com/nvim-tree/nvim-web-devicons)   | Display Icons       | `config/web-devicons.nix`                        |
+| [`toggleterm.nvim`](https://github.com/akinsho/toggleterm.nvim)        | Float Terminal      | `<C-t>`                                          |
+| [`catppuccin.nvim`](https://github.com/catppuccin/nvim)                | Default colorschemes| `<leader>e`                                      |
+| [`whichkey.nvim`](https://github.com/folke/which-key.nvim)             | Keymap helper       | `<leader>`                                       |
+| [`yanky.nvim`](https://github.com/gbprod/yanky.nvim)                   | Better yanking      | `config/yanky.nix`                               |
+| [`smear-cursor.nvim`](https://github.com/sphamba/smear-cursor.nvim)    | Cursor animations   | `config/smear-cursor.nix`                        |
+| [`noice.nvim`](https://github.com/folke/snacks.nvim)                   | Notification        | `config/noice.nix`                               |
+| [`neoscroll.nvim`](https://github.com/karb94/neoscroll.nvim)           | Better navigation   | `config/neoscroll.nix`                           |
+| [`markview.nvim`](https://github.com/OXY2DEV/markview.nvim)            | Markdown view       | `config/markview.nix`                            |
+| [`hlchunk.nvim`](https://github.com/shellRaining/hlchunk.nvim)         | Brackets view       | `config/hlchunk.nix`                             |
+| [`lazygit.nvim`](https://github.com/kdheepak/lazygit.nvim)             | Lazygit             | `<leader>gg`                                     |
+| [`gitsigns.nvim`](https://github.com/lewis6991/gitsigns.nvim)          | Git signs           | `config/gitsigns.nix`                            |
+| [`barbecue.nvim`](https://github.com/utilyre/barbecue.nvim)            | Breadcrumb visualize| `config/barbecue.nix`                            |
+| [`kulaka.nvim`](https://github.com/mistweaverco/kulala.nvim)           | Http Client         |  `<leader>Rs`                                    |
 
-> Note: `<leader>` is mapped to **<Space>** by default. You can change it in `keymaps.nix`.
+
 
 ---
 
