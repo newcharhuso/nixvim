@@ -19,24 +19,6 @@
         gitsigns.enabled = true;
         tmux.enabled = false;
       };
-      on_open = ''
-        function()
-          require("gitsigns.actions").toggle_current_line_blame()
-          vim.cmd('IBLDisable')
-          vim.opt.relativenumber = false
-          vim.opt.signcolumn = "no"
-          require("gitsigns.actions").refresh()
-        end
-      '';
-      on_close = ''
-        function()
-          require("gitsigns.actions").toggle_current_line_blame()
-          vim.cmd('IBLEnable')
-          vim.opt.relativenumber = true
-          vim.opt.signcolumn = "yes:2"
-          require("gitsigns.actions").refresh()
-        end
-      '';
     };
   };
 }

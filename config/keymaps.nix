@@ -78,6 +78,11 @@
       action = "<cmd>lua Snacks.picker.command_history()<CR>";
     }
     {
+      key = "<leader>zm";
+      mode = [ "n" ];
+      action = "<cmd>ZenMode<CR>";
+    }
+    {
       key = "<leader>p";
       mode = [ "n" ];
       action = "<cmd>YankyRingHistory<CR>";
