@@ -34,6 +34,7 @@
     ./yazi.nix
     ./wtf.nix
     ./windsurf-vim.nix
+    ./ts-comments.nix
   ];
 
   config = {
