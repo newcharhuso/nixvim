@@ -26,4 +26,11 @@
       XDG_DATA_DIRS = ":";
     };
   };
+  keymaps = [
+    {
+      key = "<leader>nd";
+      mode = [ "n" ];
+      action = "<cmd>NixDevelop<CR>";
+    }
+  ];
 }
