@@ -31,7 +31,8 @@
     ./neoscroll.nix
     ./markview.nix
     ./zen-mode.nix
-		./yazi.nix
+    ./yazi.nix
+    ./wtf.nix
   ];
 
   config = {
