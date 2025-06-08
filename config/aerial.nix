@@ -51,7 +51,13 @@
         "{" = "actions.prev";
         "}" = "actions.next";
       };
-
     };
   };
+  keymaps = [
+    {
+      key = "<leader>o";
+      mode = [ "n" ];
+      action = "<cmd>AerialToggle<CR>";
+    }
+  ];
 }
