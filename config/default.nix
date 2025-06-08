@@ -30,6 +30,7 @@
     ./noice.nix
     ./neoscroll.nix
     ./markview.nix
+    ./zen-mode.nix
   ];
 
   config = {
