@@ -33,7 +33,7 @@
     ./zen-mode.nix
     ./yazi.nix
     ./wtf.nix
-    ./windsurf-vim.nix
+    # ./windsurf-vim.nix
     ./ts-comments.nix
   ];
 
