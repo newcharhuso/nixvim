@@ -36,6 +36,7 @@
     # ./windsurf-vim.nix if you want to use this plugin uncomment it and run nix develop --impure
     ./ts-comments.nix
     ./timerly.nix
+    ./treesj.nix
   ];
 
   config = {
