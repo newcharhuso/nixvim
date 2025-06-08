@@ -33,6 +33,7 @@
     ./zen-mode.nix
     ./yazi.nix
     ./wtf.nix
+    ./windsurf-vim.nix
   ];
 
   config = {
