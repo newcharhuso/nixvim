@@ -2,6 +2,8 @@
 
 This is a personal Neovim configuration written using **Nix Flakes** and powered by [nixvim](https://github.com/nix-community/nixvim). It is heavily inspired by [LazyVim](https://lazyvim.github.io/) and aims to provide a modern, modular, and reproducible setup for Neovim, leveraging the power of the Nix ecosystem.
 
+![Preview Screenshot](/assets/pic7.png)
+
 ![Preview Screenshot](/assets/pic2.png)
 
 ---

@@ -35,13 +35,43 @@
         margin = 5;
         content = [
           [
-            " Find Files"
+            "  Find File"
             "lua Snacks.picker.files()"
             "f"
           ]
           [
-            "Git Browse"
+            "  New File"
+            "ene | startinsert"
+            "n"
+          ]
+          [
+            "  File Text"
+            "lua Snacks.dashboard.pick('live_grep')"
+            "g"
+          ]
+          [
+            "  Recent Files"
+            "lua Snacks.dashboard.pick('oldfiles')"
+            "r"
+          ]
+          [
+            "  Config"
+            "lua Snacks.dashboard.pick('files', {cwd = vim.fn.stdpath('config')})"
+            "c"
+          ]
+          [
+            "  Session"
+            "lua Snacks.dashboard.pick('files', {cwd = vim.fn.stdpath('config')})"
+            "s"
+          ]
+          [
+            "  Git Browse"
             "lua Snacks.gitbrowse()"
+            "b"
+          ]
+          [
+            "  Quit"
+            "qa"
             "b"
           ]
         ];
