@@ -1,4 +1,4 @@
-{ pkgs, ... }:
+{ pkgs, lib, ... }:
 {
   plugins = {
     lsp-lines = {
@@ -14,10 +14,16 @@
       enable = true;
       inlayHints = true;
       servers = {
-        omnisharp = {
+        csharp_ls = {
           enable = true;
         };
-        html = {
+        superhtml = {
+          enable = true;
+        };
+        sqls = {
+          enable = true;
+        };
+        nushell = {
           enable = true;
         };
         lua_ls = {
@@ -27,6 +33,9 @@
           enable = true;
         };
         ts_ls = {
+          enable = true;
+        };
+        rust_analyzer = {
           enable = true;
         };
         marksman = {
@@ -139,9 +148,6 @@
   };
   extraPlugins = with pkgs.vimPlugins; [
     ansible-vim
-  ];
-  extraPackages = with pkgs; [
-    roslyn-ls
   ];
 
   extraConfigLua = ''
