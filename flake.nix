@@ -4,7 +4,7 @@
   inputs = {
     nixpkgs.url = "github:nixos/nixpkgs/nixos-25.05";
     nixpkgs-unstable.url = "github:nixos/nixpkgs/nixos-unstable";
-    nixvim.url = "github:nix-community/nixvim/nixos-25.05";
+    nixvim.url = "github:nix-community/nixvim";
   };
 
   outputs =
@@ -16,8 +16,7 @@
     }:
     let
       system = "x86_64-linux";
-      pkgs = import nixpkgs { inherit system; };
-      pkgs-unstable = import nixpkgs-unstable { inherit system; };
+      pkgs = import nixpkgs-unstable { inherit system; };
       config = import ./config;
 
       nvim = nixvim.legacyPackages.${system}.makeNixvimWithModule {
