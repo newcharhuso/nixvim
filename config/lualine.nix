@@ -1,4 +1,5 @@
-{ pkgs, ... }: {
+{ pkgs, ... }:
+{
   plugins.lualine = {
     enable = true;
     settings = {
@@ -20,7 +21,7 @@
         lualine_a = [
           {
             __unkeyed-1 = "mode";
-            icon = "";
+            icon = "";
           }
         ];
         lualine_b = [
@@ -95,3 +96,4 @@
     };
   };
 }
+
