@@ -16,7 +16,7 @@
     }:
     let
       system = "x86_64-linux";
-      pkgs = import nixpkgs-unstable { inherit system; };
+      pkgs = import nixpkgs { inherit system; };
       config = import ./config;
 
       nvim = nixvim.legacyPackages.${system}.makeNixvimWithModule {
