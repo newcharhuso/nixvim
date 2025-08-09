@@ -1,7 +1,7 @@
 { ... }:
 {
   colorschemes = {
-    solarized-osaka = {
+    cattpuccin = {
       enable = true;
       settings = {
         transparent = false;
