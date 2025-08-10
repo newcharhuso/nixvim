@@ -40,9 +40,6 @@
         ts_ls = {
           enable = true;
         };
-        rust_analyzer = {
-          enable = true;
-        };
         marksman = {
           enable = true;
         };
