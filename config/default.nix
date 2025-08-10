@@ -37,6 +37,7 @@
     ./ts-comments.nix
     ./timerly.nix
     ./treesj.nix
+    ./web-devicons.nix
   ];
 
   config = {
