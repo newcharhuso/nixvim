@@ -20,10 +20,10 @@ cd nixvim
 nix develop
 ```
 
-### ⚡ Method 2: Run directly using `nix develop`
+### ⚡ Method 2: For NixOS users `nix profile install`
 
 ```bash
-nix develop github:XhuyZ/nixvim
+nix profile install github:XhuyZ/nixvim
 ```
 
 Once inside the `nix develop` environment, just run:
