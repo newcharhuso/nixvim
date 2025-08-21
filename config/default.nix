@@ -17,23 +17,17 @@
     ./autopairs.nix
     ./blink-cmp.nix
     ./tmux-navigator.nix
-    ./smear-cursor.nix
     ./lsp/conform.nix
     ./lsp/fidget.nix
     ./lsp/lsp.nix
     ./nix-develop.nix
-    ./kulala.nix
     ./aerial.nix
-    ./autosave.nix
     ./notify.nix
-    ./barbecue.nix
     ./noice.nix
     ./neoscroll.nix
     ./markview.nix
     ./zen-mode.nix
-    ./yazi.nix
     ./wtf.nix
-    # ./windsurf-vim.nix if you want to use this plugin uncomment it and run nix develop --impure
     ./ts-comments.nix
     ./timerly.nix
     ./treesj.nix
@@ -46,8 +40,8 @@
     };
 
     opts = {
+      clipboard = "unnamedplus";
       number = true;
-      colorcolumn = "80";
       relativenumber = true;
       shiftwidth = 2;
       tabstop = 2;
@@ -59,7 +53,6 @@
       incsearch = true;
       termguicolors = true;
       scrolloff = 8;
-      signcolumn = "yes";
       updatetime = 50;
       foldlevelstart = 99;
     };
