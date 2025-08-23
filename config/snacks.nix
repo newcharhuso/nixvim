@@ -15,7 +15,7 @@
       };
     }
     {
-      key = "<leader>fb";
+      key = "<leader>fg";
       mode = [ "n" ];
       action = "<cmd>lua Snacks.picker.buffers()<CR>";
       options = {
