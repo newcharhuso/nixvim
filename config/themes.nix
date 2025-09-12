@@ -1,7 +1,7 @@
 { ... }:
 {
   colorschemes = {
-catppuccin = {
+    catppuccin = {
       enable = true;
       settings = {
         background = {
@@ -9,12 +9,14 @@ catppuccin = {
           dark = "mocha";
         };
         custom_highlights = ''
-          function(highlights)
-            return {
-              CursorLineNr = { fg = highlights.peach, style = {} },
-              NavicText = { fg = highlights.text },
-            }
-          end
+                    function(highlights)
+                      return {
+                        CursorLineNr = { fg = highlights.peach, style = {} },
+                        NavicText = { fg = highlights.text, style = {} },
+                    		LineNr   = { fg = "#dc8a78", style = {} },
+          							Viusel   = { bg = "#44475a", style = {} },
+                      }
+                    end
         '';
         flavour = "macchiato"; # "latte", "mocha", "frappe", "macchiato" or raw lua code
         no_bold = false;
@@ -65,4 +67,4 @@ catppuccin = {
       };
     };
   };
-  }
+}
